@@ -78,20 +78,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               SizedBox(width: 5),
               Expanded(
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.zero,
-                    ),
-                  ),
-                  onPressed: () {
-                    setState(() {
-
-                    });
-                  },
-                  child: Text(""),
-                ),
+                child:
+                  TextField(),
               ),
               SizedBox(width: 5),
               Expanded(
@@ -154,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                     });
                   },
-                  child: Text(""),
+                  child: TextField(),
                 ),
               ),
               SizedBox(width: 5),
@@ -218,7 +206,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                     });
                   },
-                  child: Text(""),
+                  child: TextField(),
                 ),
               ),
               SizedBox(width: 5),

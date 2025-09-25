@@ -20,14 +20,13 @@ class TimerHomePage extends StatefulWidget {
 }
 
 class TimerHomePageState extends State<TimerHomePage> {
-  String a = "Work"; 
-  String b = "29:31"; // fake text
+  String b = "29:31";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey[800], // grey background
+        backgroundColor: Colors.grey,
         title: Text(
           "My Work Timer",
           style: TextStyle(color: Colors.white),
@@ -42,14 +41,14 @@ class TimerHomePageState extends State<TimerHomePage> {
               Expanded(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: a == "Work" ? Colors.green : Colors.grey,
+                    backgroundColor: Colors.green,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.zero, // no rounded corners
+                      borderRadius: BorderRadius.zero,
                     ),
                   ),
                   onPressed: () {
                     setState(() {
-                      a = "Work";
+                      
                     });
                   },
                   child: Text("Work"),
@@ -59,14 +58,14 @@ class TimerHomePageState extends State<TimerHomePage> {
               Expanded(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: a == "Short" ? Colors.green : Colors.grey,
+                    backgroundColor:Colors.grey,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.zero,
                     ),
                   ),
                   onPressed: () {
                     setState(() {
-                      a = "Short";
+                      
                     });
                   },
                   child: Text("Short Break"),
@@ -76,14 +75,14 @@ class TimerHomePageState extends State<TimerHomePage> {
               Expanded(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: a == "Long" ? Colors.green : Colors.grey,
+                    backgroundColor:Colors.grey,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.zero,
                     ),
                   ),
                   onPressed: () {
                     setState(() {
-                      a = "Long";
+                      
                     });
                   },
                   child: Text("Long Break"),
